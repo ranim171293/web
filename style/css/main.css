@@ -1,0 +1,169 @@
+body {
+  font-family: Arial,Helvetica,san-Serif;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.nav {
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  height: 40px;
+  width: 100%;
+}
+
+.nav-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0px 155px;
+  overflow: hidden;
+  float: right;
+}
+.nav-ul li {
+  display: inline-block;
+}
+.nav-ul li a {
+  display: inline-block;
+  color: #fff;
+  margin: 10px 20px;
+}
+.nav-ul li a:hover {
+  background-color: #333;
+}
+
+.active {
+  color: red;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  45% {
+    left: 0%;
+  }
+  50% {
+    left: -100%;
+  }
+  95% {
+    left: -100%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+.caption {
+  position: absolute;
+  right: 0;
+  top: 22%;
+  z-index: 5;
+}
+
+.sec-row {
+  display: flex;
+}
+
+.head_name {
+  padding: 20px 65px;
+}
+.head_name::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+
+.abt {
+  font-size: 35px;
+}
+
+.about-us {
+  padding: 20px 65px;
+  background: #333;
+}
+
+.about-para {
+  color: #fff;
+}
+
+.img-sec {
+  width: 100%;
+}
+
+.client-name {
+  color: red;
+  margin-bottom: 0;
+}
+
+.sec1 {
+  flex: 1;
+  margin: 25px 5px;
+}
+
+.client-para {
+  font-size: 14px;
+  color: #fff;
+}
+
+.cli-sec {
+  background-image: url("../../images/img1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}
+
+.cli-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 5%;
+}
+.cli-ul li {
+  display: inline-block;
+}
+.cli-ul li a {
+  display: inline-block;
+  color: #fff;
+  margin: 10px 35px;
+}
+.cli-ul li a:hover {
+  font-weight: 600;
+}
+
+.serve-para {
+  padding: 20px 65px;
+  color: #000;
+}
+
+.head_name__inverse {
+  padding: 20px 65px;
+  background-color: #333;
+}
