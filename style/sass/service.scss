@@ -1,8 +1,35 @@
 .serve-para{
-    padding: 20px 65px;
+    // padding: 20px 65px;
     color:#000;
 }
 .head_name__inverse{
     padding: 20px 65px;
     background-color: #333;
+    color:#fff;
+}
+.serve{
+    padding: 20px 65px;
+}
+.serve-ul{
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+
+    li{
+        display: inline-block;
+    }
+    li:active{
+        background-color: #333;
+    }
+    li a{
+        display: inline-block;
+        color: #000;
+        margin: 10px 35px;
+    }
+    li a:active{
+        // background-color: #333;
+        color:#fff;
+    }
 }
