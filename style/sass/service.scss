@@ -11,11 +11,12 @@
     padding: 20px 65px;
 }
 .serve-ul{
+    border-bottom: 1px solid #000;
     list-style-type: none;
     padding: 0;
-    margin: auto;
+    // margin: auto;
     overflow: hidden;
-    text-align: center;
+    // text-align: center;
 
     li{
         display: inline-block;
@@ -26,10 +27,127 @@
     li a{
         display: inline-block;
         color: #000;
-        margin: 10px 35px;
+        margin: 10px 30px;
     }
     li a:active{
         // background-color: #333;
         color:#fff;
     }
+}
+.serve-drop{
+    margin-right: 30px;
+    flex:1;
+}
+
+.staff-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.staff-img{
+    width: 100%;
+    border: 1px solid #000;
+    // vertical-align: middle;
+    // margin-right: 31px;
+}
+.staff-title{
+    font-size:14px;
+    vertical-align: top;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+.staff-img__sec{
+    width: 30%;
+    margin-right: 31px;
+}
+.staff-des{
+    display: flex;
+    flex-direction: column;
+}
+.staff-det{
+    font-size: 14px;
+}
+.progress{
+    margin-left: 60px;
+    flex:1;
+}
+.progressbar{
+    background-color: #ccc;
+    border-radius: 13px;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 30px;
+}
+.progressive{
+    background-color: #f0a3a3;
+    width: 50%;
+    // max-width: 100%;
+    float: left;
+   -webkit-animation: progressive 2s 1 forwards;
+    -moz-animation: progressive 2s 1 forwards;
+    -ms-animation: progressive 2s 1 forwards;
+    animation: progressive 2s 1 forwards;
+    height: 20px;
+    border-radius: 10px;
+}
+.progress-text{
+   background:  url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
+    padding:0px 10px;
+    height: 20px;
+}
+.skill-area{
+    margin-top: 40px;
+}
+.skill-wrap{
+    display: flex;
+}
+.web-skill{
+    height: 110px;
+    width: 110px;
+    background-color: #ccc;
+    border-radius: 55px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.skill-icon{
+    padding: 15px 20px;
+}
+.skill-icon1{
+    padding:22px 20px;
+}
+.skill-icon2{
+    padding: 15px 38px;
+}
+.skill-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.skill-area_text{
+    text-align: center;
+}
+.area-wrap{
+    margin: 10px;
+}
+/////slider/////
+#slider2{
+     overflow: hidden; 
+     position: relative;
+     height: 80vh;
+}
+#slider2 figure img { width: 20%; float: left; }
+#slider2 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+.caption2{
+    position:absolute;
+    right: 0;
+    top:22%;
+    z-index: 5;
+    color:#fff;
 }

@@ -1,8 +1,8 @@
 body{
 	font-family:Arial,Helvetica,san-Serif;
 	// color:#111;
-	position:relative;
-	overflow-x: hidden;
+	// position:relative;
+	// overflow-x: hidden;
     margin: 0;
 }
 .nav{
@@ -35,7 +35,7 @@ body{
         background-color: #333;
     }
 }
-.active{
+.nav-active{
     color: red;
 }
 // #home{
@@ -46,7 +46,11 @@ body{
 //     height:600px;
 //     width:100%; 
 // }
-#slider { overflow: hidden; }
+#slider {
+     overflow: hidden; 
+     position: relative;
+     height: 100vh;
+}
 #slider figure img { width: 20%; float: left; }
 #slider figure { 
   position: relative;
@@ -83,6 +87,8 @@ body{
 }
 .head_name{
     padding: 20px 65px;
+    // width: 80%;
+    // margin: auto;
 
     &::before{
         content:"";
@@ -100,6 +106,7 @@ body{
 .about-us{
     padding: 20px 65px;
     background: #333;
+    
 }
 .about-para{
     color:#fff;
